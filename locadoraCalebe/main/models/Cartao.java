@@ -13,6 +13,7 @@ public class Cartao extends MeioPagamento{
     }
 
     public Cartao(Cartao cartao, Double valor) {
+        // A ideia dessa sobrecarga é criar um registro de pagamento com um determinado cartão
         super(cartao.getCliente(), valor);
         this.bandeira = cartao.getBandeira();
     }
